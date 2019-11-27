@@ -1,0 +1,33 @@
+/* CSS Document */
+body{ margin:0; padding:0; font-family:"微软雅黑"; font-size:1em; height:100%; }
+ul,li,img{ margin:0; padding:0; list-style:none; border:none;}
+a{ padding:0; margin:0; text-decoration:none; color:#666;}
+p,h1,h2,h3,h4,h5,dl,dd,dt,input,span{ padding:0; margin:0;}
+.ov_f{ overflow:hidden;}
+.box-s{ box-sizing:border-box;}
+.w_100{ width:100%; overflow:hidden;}
+input[type=text]{outline:none;}
+
+/*注册头部信息*/
+.login_header{ width: 100%; height: 60px; background: #fff; box-shadow:0px 1px 3px #ccc; margin-bottom: 30px;}
+.header_warp{width:1180px; height: 66px; margin: 0 auto;}
+.header_left{float:left;}
+.header_logo{float:left; width: 146px;  overflow: hidden; margin: 8px 20px 0 10px;}
+.header_logo img{width:100%; height: auto;}
+.login_title{float:left; height: 30px;overflow: hidden; line-height: 30px; margin-top: 18px; border-left: 1px solid #666; padding-left: 16px; font-size: 22px; color: #000;}
+.header_bnt{float:right; margin-top: 15px; font-size: 12px; color: #999;line-height: 30px;}
+.header_bnt .lgoin_bnt{display: block;float: right; width: 56px; height: 28px; text-align: center; line-height: 28px; margin-left: 5px;border-radius: 3px;background: #328ddc; border: 1px solid #0170d6; color: #fff;font-size: 14px;}
+
+
+/*内容信息*/
+.login_content{ width: 1180px; overflow: hidden; margin: 0 auto;}
+
+
+/*底部信息*/
+.login_footer{widht:100%; height: 30px; text-align: center;line-height: 30px; font-size: 12px; color: #999;}
+
+
+
+
+
+

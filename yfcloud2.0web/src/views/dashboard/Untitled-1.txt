@@ -1,0 +1,377 @@
+<template>
+  <div id="dashboard" class="dashboard-container">
+    <!-- <component :is="currentRole" /> -->
+
+    <div class="biggestbox">
+      <div class="bigboxleft">
+        <div class="leftbox">
+          <div class="leftboxtop">系统使用时长和登录排名</div>
+          <div class="leftboxmid">
+            <!-- -->
+            <div class="leftboxmidmid">
+              <div v-for="(item,index) in midbox" :key="index">
+                <div v-if="index==0" class="leftboxmidmidbox1"></div>
+                <div v-if="index==1" class="leftboxmidmidbox"></div>
+                <div v-if="index==2" class="leftboxmidmidbox" style="margin-right:0;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="leftboxbottom">
+            <div class="leftboxbottomtop">本周登录时长TOP5</div>
+
+            <div class="leftboxbottombottom">
+              <!-- <img src="@/assets/404_images/404_cloud.png" alt="" v-show="true"> -->
+              <div class="nodataimg">
+                <img class="nodataimg_in" src="@/assets/firstpage/nodata.png" alt v-show="true" />
+                <div class="nodataword_in">还没有数据哦！</div>
+              </div>
+              <div v-for="(item,index) in midbox5" :key="index" v-show="false">
+                <div class="leftboxbottombottombox">
+                  <div class="leftword">
+                    <el-popover class="item" trigger="hover" placement="top-start" content="李宇">
+                      <div class="ellipsis" slot="reference">1 &nbsp; &nbsp; &nbsp; 李宇</div>
+                    </el-popover>
+                  </div>
+
+                  <div class="leftimg">
+                    <img src alt class="leftimg_in" />
+                  </div>
+                  <div class="rightword">9次</div>
+                  <div class="leftprogram">
+                    <el-progress :stroke-width="10" :percentage="100" :format="format"></el-progress>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bigboxright">
+        <div class="rightbox">
+            <div class="rightboxtop">
+                <div class="rightboxtop_box">
+                    <div  class="rightboxtop_box_left">
+                        <img class="rightboxtop_box_left_icon" src="@/assets/firstpage/icon1.png" alt="">
+                    </div>
+                    <div  class="rightboxtop_box_right">
+                        报表中心
+                    </div>
+                </div>
+            </div>
+             <div class="rightboxmid">
+                <el-calendar v-model="value" @click="clickcalendar">
+              </el-calendar>
+
+            </div>
+             <div class="rightboxbottom">
+
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+
+<style lang="scss" scoped>
+#dashboard /deep/ {
+
+
+  // <div class="rightboxtop">
+
+  //           </div>
+  //            <div class="rightboxmid">
+
+  //           </div>
+  //            <div class="rightboxbottom">
+
+  //           </div>
+  .rightboxmid{
+    height:20vw;
+    width: 100%;
+    background-color: tan;
+  }
+  .rightboxtop{
+    height: 5vw;
+    width: 100%;
+    background-color: aquamarine;
+    margin-bottom: 2vw;
+    padding-top: 1vw; 
+  }
+.rightboxtop_box{
+  height: 3vw;
+  background-color: blue;
+  margin:0 auto;
+  width:60%;
+  box-sizing: border-box;
+
+}
+.rightboxtop_box_left{
+  padding: 0.5vw;
+  padding-left: 2vw;
+    float: left;
+  height: 3vw;
+  width:40%;
+  text-align: center;
+}
+.rightboxtop_box_left_icon{
+width:2vw;
+height: 2vw;
+}
+.rightboxtop_box_right{
+  float: left;
+  height: 3vw;
+  width:60%;
+  text-align: left;
+  line-height: 3vw;
+  font-size: 1vw;
+  font-weight: 300;
+  color: #fff;
+}
+
+  .nodataimg {
+    height: 8vw;
+    width: 8vw;
+    margin: 0 auto;
+    //  margin-top: 6vw;
+    // background-color: red;
+    box-sizing: border-box;
+  }
+  .nodataimg_in {
+    margin-left: 0.5vw;
+    height: 6vw;
+    width: 6vw;
+    margin-top: 3vw;
+  }
+  .nodataword_in {
+    width: 100%;
+    height: 2vw;
+    text-align: center;
+    line-height: 2vw;
+    font-size: 1vw;
+    color: gainsboro;
+  }
+  .biggestbox {
+    height: 42vw;
+    background-color: red;
+    width: 100%;
+  }
+  .bigboxleft {
+    height: 37vw;
+    width: 70%;
+    background-color: beige;
+    float: left;
+    box-sizing: border-box;
+  }
+  .bigboxright {
+    height: 37vw;
+    width: 30%;
+    background-color: rgb(240, 240, 96);
+    float: left;
+    box-sizing: border-box;
+  }
+
+  .leftbox {
+    border: 1px solid skyblue;
+    height: 35vw;
+    width: 90%;
+    margin-top: 1vw;
+    margin-left: 5%;
+    background-color: rebeccapurple;
+  }
+  .rightbox {
+    height: 35vw;
+    width: 90%;
+    margin-top: 1vw;
+    margin-left: 5%;
+    background-color: rebeccapurple;
+  }
+  .leftboxtop {
+    border-bottom: 1px solid skyblue;
+    height: 2vw;
+    width: 100%;
+    background-color: pink;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 10%;
+  }
+  .leftboxmid {
+    height: 11vw;
+    width: 100%;
+    background-color: yellow;
+  }
+  .leftboxmidmid {
+    margin: 0 auto;
+    height: 11vw;
+    width: 90%;
+    // background-color: cadetblue;
+    border-bottom: 2px dashed gray;
+  }
+  .leftboxmidmidbox1 {
+    float: left;
+    margin-right: 2%;
+    margin-top: 1vw;
+    height: 9vw;
+    width: 32%;
+    background-color: red;
+    // border-bottom: 2px dashed gray;
+  }
+  .leftboxmidmidbox {
+    float: left;
+    margin-right: 2%;
+    margin-top: 1vw;
+    height: 9vw;
+    width: 32%;
+    background-color: darkgoldenrod;
+    // border-bottom: 2px dashed gray;
+  }
+  .leftboxbottom {
+    height: 20vw;
+    width: 100%;
+    background-color: rgb(235, 235, 184);
+    box-sizing: border-box;
+  }
+  .leftboxbottomtop {
+    height: 3vw;
+    width: 100%;
+    background-color: gainsboro;
+    line-height: 3vw;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  .leftboxbottombottombox {
+    height: 3vw;
+    width: 100%;
+    // background-color: blanchedalmond;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 3px;
+  }
+  .leftboxbottombottom {
+    height: 16vw;
+    width: 90%;
+    background-color: darkmagenta;
+
+    margin: 0 auto;
+    margin-bottom: 3px;
+    box-sizing: border-box;
+  }
+
+  .leftword {
+    height: 3vw;
+    width: 12%;
+    // background-color: red;
+    text-align: left;
+    // padding-left: 2%;
+    font-size: 14px;
+    line-height: 3vw;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .leftimg {
+    padding-left: 1vw;
+    min-width: 4vw;
+    max-width: 10%;
+    height: 3vw;
+    //  background-color: cadetblue;
+    float: left;
+  }
+  .leftimg_in {
+    width: 3vw;
+    height: 3vw;
+    background-color: yellowgreen;
+    border-radius: 3vw;
+    float: left;
+  }
+  .el-progress {
+    line-height: 3vw;
+  }
+  .el-progress--line {
+    line-height: 3vw;
+  }
+  .leftprogram {
+    line-height: 3vw;
+    // padding-top: 1vw;
+    width: 60%;
+    height: 3vw;
+    //  background-color: aqua;
+    float: right;
+  }
+  .rightword {
+    width: 10%;
+    height: 3vw;
+    //  background-color: rgb(67, 100, 100);
+    float: right;
+    text-align: right;
+    padding-left: 2%;
+    font-size: 14px;
+    line-height: 3vw;
+    box-sizing: border-box;
+  }
+  .el-calendar-day{
+    height:2vw;
+    width: 2vw;
+    border-radius: 2vw;
+       margin:0 auto;
+       line-height: 1.2vw;
+  }
+  .is-selected {
+      background-color:#fff;
+  }
+ .is-selected .el-calendar-day{
+    
+     height:2vw;
+    width: 2vw;
+    border-radius: 2vw;
+    background-color:blue;
+    color:#fff;
+  }
+  .el-calendar-table tr td{
+      border: 0px;
+      text-align: center;
+  }
+}
+</style>
+
+<script>
+import { mapGetters } from "vuex";
+import adminDashboard from "./admin";
+import editorDashboard from "./editor";
+
+export default {
+  name: "Dashboard",
+  components: { adminDashboard, editorDashboard },
+  data() {
+    return {
+      midbox: ["", "", ""],
+      midbox5: ["", "", "", "", ""],
+      currentRole: "adminDashboard",
+       value: new Date()
+    };
+  },
+  methods: {
+    clickcalendar(e){
+
+    },
+    format(percentage) {
+      return percentage <= 100 ? "" : `${percentage}%`;
+    }
+  },
+  computed: {
+    ...mapGetters(["roles"])
+  },
+  created() {
+    if (!this.roles.includes("admin")) {
+      this.currentRole = "adminDashboard";
+    }
+  }
+};
+</script>

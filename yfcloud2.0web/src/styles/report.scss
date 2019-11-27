@@ -1,0 +1,129 @@
+#bodys {
+    background-color: rgb(243, 244, 248);
+    overflow: auto;
+  }
+  .el-main {
+    padding-top: 0px;
+  }
+  .headerBox {
+    border-top: 1px solid #dfe6ec;
+    border-left: 1px solid #dfe6ec;
+    border-right: 1px solid #dfe6ec;
+    padding-top: 15px;
+  }
+  .dashboard-editor-container {
+    padding: 20px;
+    padding-bottom: 0px;
+    background-color: rgb(240, 242, 245);
+    position: relative;
+  }
+  .chart-wrapper {
+    background: #fff;
+    padding: 0px 16px 0;
+    margin-bottom: 20px;
+    min-height: 300px;
+  }
+  .nolist {
+    background-image: url(../../../assets/images/noData.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    font-size: 12px;
+    color: #a2a2a2;
+    padding-top: 200px;
+    text-align: center;
+  }
+  .distributionCharBox {
+    // max-width: 360px;
+    margin: 0 auto;
+  }
+  .chartSty {
+    /* background:#fff; */
+    /* margin-bottom: 32px; */
+  }
+  .chartTitle {
+    padding: 10px 0px 0px;
+    position: relative;
+    background: #fff;
+    text-align: center;
+    span {
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .shareBox {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: #2cb3ff;
+      font-size: 0px;
+      cursor: pointer;
+      span {
+        font-size: 14px;
+        font-weight: 200;
+      }
+    }
+  }
+  .shareItem {
+    font-size: 0px;
+    cursor: pointer;
+    span {
+      font-size: 14px;
+      color: #2cb3ff;
+    }
+  }
+  .shareLg {
+    display: inline-block;
+    vertical-align: -2px;
+    width: 14px;
+    height: 14px;
+    background-image: url(../../../assets/images/share.png);
+    background-repeat: no-repeat;
+  }
+  .el-form-item {
+    display: inline-block;
+    margin-top: 18px;
+    margin-left: 10px;
+  }
+  .centetFonts {
+    position: absolute !important;
+    top: 70%;
+    left: 20%;
+    z-index: 99999999999;
+    width: 60%;
+    height: 36px;
+    line-height: 36px;
+    background: rgb(149, 149, 149);
+    color: white;
+    font-size: 12px;
+  }
+  .block {
+    display: inline-block;
+    margin: 20px 20px;
+  }
+  .blocks {
+    display: inline-block;
+    margin: 20px 5px;
+  }
+  .el-form-item {
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+  /deep/ .el-table__header-wrapper {
+    overflow-y: scroll;
+  }
+  /deep/ .el-table__header-wrapper::-webkit-scrollbar {
+    opacity: 0;
+  }
+  /deep/ .el-table__header-wrapper::-ms-scrollbar {
+    opacity: 0;
+  }
+  /deep/ .el-table__header-wrapper::-moz-scrollbar {
+    opacity: 0;
+  }
+  /deep/ .el-table__header-wrapper::-o-scrollbar {
+    opacity: 0;
+  }
+  .el-table {
+    overflow: visible !important;
+  }

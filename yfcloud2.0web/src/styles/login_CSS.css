@@ -1,0 +1,160 @@
+/* CSS Document */
+body{ margin:0; padding:0; font-family:"微软雅黑"; font-size:1em; height:100%; }
+ul,li,img{ margin:0; padding:0; list-style:none; border:none;}
+a{ padding:0; margin:0; text-decoration:none; color:#666;}
+p,h1,h2,h3,h4,h5,dl,dd,dt,input,span{ padding:0; margin:0;}
+.ov_f{ overflow:hidden;}
+.box-s{ box-sizing:border-box;}
+.w_100{ width:100%; overflow:hidden;}
+input[type=text]{outline:none;}
+
+/*共用头部*/
+.gary_bg{ background: #f2f4f8;}
+.login_header{ width: 100%; height:60px; background:#fff;  margin-bottom: 50px;}
+.login_h_w{ width: 1200px; margin: 0 auto;}
+.header_left{float:left; }
+.header_logo{float:left;  overflow: hidden; margin-top: 8px;}
+.login_nav{ display: block; float:left;  padding-left: 30px;}
+.login_nav li{ float:left; width: 110px; height: 60px;  line-height: 60px;}
+.login_nav li a{ display:block; width: 100%; height: 60px; line-height: 60px; font-size: 16px; color: #333; text-align:center;}
+.login_nav li a:hover{color: #20a0ff; border-top:2px solid #20a0ff; }
+
+.header_bnt{float:right; margin-top: 20px;  font-size: 12px; color: #999;line-height: 30px;}
+.header_bnt .lgoin_bnt{display: block;float: right; width: 56px; height: 28px; text-align: center; line-height: 28px; margin-left: 5px;border-radius: 3px;background: #20a0ff; border: 1px solid #20a0ff; color: #fff;font-size: 14px;}
+
+
+/*内容信息*/
+.login_content{ width: 900px; overflow: hidden; margin: 0 auto; background: #fff; margin-bottom:20px;}
+
+/*流程*/
+.process_warp{ width:680px; border-bottom: 1px solid #dfdfdf;  overflow: hidden; margin: 0px auto; padding:30px 150px; }
+.process_node{ width:100px; height: 60px; overflow: hidden; float:left; text-align: center;}
+.proscess_line{ position:relative; top: 20px; left: 90px; width: 200px; height: 1px; background: #dfdfdf; z-index: 9;}
+.proscess_line_blue{ background:#20a1ff;}/*线条变蓝*/
+.align_right{ float:right;}
+.process_node p{ color: #cdcdcd; font-size:24px; line-height: 40px; }
+.process_node span{ font-size:12px; color: #999; line-height: 20px;}
+.choose p{ color: #20a0ff;}/*字体变蓝*/
+.choose span{ color: #20a0ff;}
+
+
+/*表单*/
+.registered_table_warp{ overflow: hidden;  }
+.form_item{padding-bottom: 22px; overflow: hidden;}
+.item_title{ float:left; width: 100px; text-align: right; margin-right: 10px; line-height:40px; font-size: 14px; color: #333; }
+.item_title span{color:#ff0000; padding:  0 5px;}
+.form_item_warp{ float: left;position: relative;}
+.text_input{ height: 38px; border:1px solid #ddd; border-radius:3px; color:#bbb; font-size: 13px; padding: 0 10px; margin-right: 10px; }
+.input_w260{width:260px;}
+.input_w150{width:146px;}
+.hint_text{position:absolute; padding-top: 3px; font-size:  12px; color:#ff0000;}
+.verify_bnt{ width: 100px; height: 38px; border:1px solid #0484e3; border-radius:3px; background: #fff; color:#0484e3; font-size: 13px; }
+.submit_bnt1{ float: left; width: 160px; height: 40px; border-radius: 3px; background: #20a0ff; border:1px solid #0484e3; font-size: 16px; color: #fff; text-align: center; line-height: 40px; margin: 0px 10px 10px 110px;}
+.submit_bnt1:hover{ background: #0484e3;}
+
+.forget_w{ width: 420px; margin:50px auto; }
+
+
+/*忘记密码*/
+.for_warp_height{ height: 450px;}
+.forget_item_p{ padding-bottom: 45px;}
+.security{position:absolute; overflow: hidden;  z-index: 9;}
+.security dt{ height: 18px; line-height: 18px; margin-bottom: 3px; }
+.warning{float: left; width:40px; height: 5px; background: #e8e8e8; margin-right: 5px; margin-top: 8px; }
+.security dt span{ font-size:12px; color: #999; padding-left: 5px;}
+.security dd{ font-size:12px; color: #666; line-height: 18px;font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; }
+.warning_color{background:#FD4600;}
+
+
+/*********************************************注册2*******************************************/
+/*注册2*/
+.reg_warp_heg{ height: 650px;}
+.re_bnt_w{width:270px; overflow: hidden; margin: 0 auto; margin-bottom: 10px; }
+.create_bnt{ width: 260px; height: 40px;  border-radius: 3px; background: #20a0ff; border:1px solid #0484e3; font-size: 16px; color: #fff; text-align: center; line-height: 40px; }
+.create_bnt:hover{ background:#0484e3; }
+.re_bnt_w span{display: block; clear: both; text-align: center; line-height: 30px; font-size:12px; color: #333; }
+
+.join_bnt{ width: 260px; height: 40px;  border-radius: 3px; background: #2b9f07; border:1px solid #197736; font-size: 16px; color: #fff; text-align: center; line-height: 40px; }
+.join_bnt:hover{ background: #197736;}
+
+/*创建公司*/
+.registered_warp{ padding:20px 0px; height: 450px; }
+.registered_warp h2{ height:40px; line-height: 40px; font-size:18px; color: #333; font-weight: bold; text-align: center; margin-bottom:15px; }
+.reg_table_w { width: 420px; margin:0 auto;}
+.submit_bnt2 { float: left; width: 80px; height: 40px; border-radius: 3px; border:1px solid #dfdfdf; font-size: 16px; color: #333; text-align: center; line-height: 40px; }
+.submit_bnt2:hover{  border:1px solid #0484e3; color: #0484e3; }
+.line_re{ width: 680px; height: 1px; background: #dfdfdf;  margin: 30px auto; }
+
+/*加入公司*/
+.cop_search{ float:left; width:100px; height: 40px; background: #20a0ff; border:1px solid #0484e3; font-size: 16px; color: #fff; text-align: center; line-height: 40px; border-radius:3px;}
+.input_block{ display: block; float:left;}
+.reg_cent{ width: 550px; margin: 0 auto;}
+
+
+.company_search{ width:580px; height: 240px;   border: 1px solid #dfdfdf; margin: 0 auto;  }
+.com_s_title{ height:38px; border-bottom: 1px solid #dfdfdf; background: #f2f4f8; line-height: 36px;}
+.com_s_title p{ float:left; font-size:14px; color: #7b808d; padding: 0 5px; }
+.con_t_w1{ float:left; width: 120px; text-align: center;}
+.con_t_w2{ float:left; width:280px; text-align: left;}
+.company_list{ height: 200px; overflow-y: scroll;}
+.company_list li{ height: 36px; line-height: 36px; overflow: hidden; clear: both;}
+.company_list .com_libg{ background: #f2f4f8;}
+.company_list li p{ float:left;font-size: 13px; padding: 0 5px;}
+.com_bnt{width:90px; height:24px; font-size: 12px; border: 1px solid #0484e3; background: #20a0ff;border-radius: 3px; margin-top: 5px;  color: #fff; text-align: center; line-height: 24px;}
+
+
+/*申请加入公司*/
+.jion_input{ width:530px; margin: 0 auto; }
+.input_w400{ width:500px; text-align: center;}
+
+.form_bnt_warp{ height: 42px; margin: 0 auto;}
+.submit_bnt_c{ border: 1px solid #0484e3; background: #20a0ff; color: #fff; margin-right: 10px;}
+.submit_bnt_c:hover{ background: #0484e3; color: #fff;}
+.reg_w{ width: 220px; margin: 0 auto;}
+
+/*创建公司选择版本*/
+.version_bg{ position: absolute; top: 0px; left: 0px; z-index: 29; width: 100%; height: 100vh; background-color: rgba(0,0,0,0.5)}
+.version_warp{width:700px; height: 438px; background: #fff; margin:10%  auto; }
+.version_warp h2{ font-size:24px; text-align: center; height: 40px; line-height: 40px;  padding: 20px 0; }
+.ersion_li{ overflow: hidden; padding: 10px 18px; margin-bottom: 30px;}
+.ersion_li li{ float:left; width:190px; height: 228px; margin: 0 15px; box-shadow:0px 0px 5px #7fadce; border:1px solid #20a0ff;}
+.ersion_li li dt{ width: 90px; height: 90px; margin: 20px auto;}
+.ersion_li li h3{ text-align: center; font-size:18px; color: #333; line-height: 40px; }
+.ersion_li li p{ padding: 0 20px; line-height: 20px; font-size: 14px; color: #999; text-align: center;}
+.ersion_li .nothing{ box-shadow:0px 0px 5px #ccc; border:none;}
+.ersion_li .nothing  h3{ text-align: center; font-size:18px; color: #999; line-height: 40px; }
+
+.version_bnt{ width:200px; height: 40px; border: 1px solid #0484e3; background: #20a0ff; color: #fff; line-height: 40px; text-align: center; margin: 10px auto;}
+.version_bnt:hover{ background: #0484e3;}
+
+
+/*用户登录*/
+.login_w{ width:382px; height: 370px; background: #fff; margin:5% auto; padding: 50px 60px;}
+.login_w h2{ font-size: 30px; font-weight:200; text-align: center; height: 40px; line-height: 40px; margin-bottom: 30px;}
+.login_input_w{ width: 380px; height: 46px; border: 1px solid #dfdfdf;border-radius: 3px;  margin-bottom: 26px; background: #fff; position: relative;}
+.no_login_p{margin-bottom: 10px; }
+.login_input_w span{ display: block; float: left; width: 46px; height: 46px; margin-right: 5px; line-height: 48px; color: #999; font-size:22px; text-align: center;}
+.login_input_w  input{ width: 320px; height: 40px; border:none; line-height: 40px; margin-top: 3px; color: #666;}
+.hint_text_line{ height: 24px; font-size: 12px; line-height: 22px; }
+.login_remember{ width: 380px;  height:24px; line-height: 24px;}
+.login_remember dt{ float:left; font-size: 12px; color: #333;}
+.login_remember dt input{ margin-right: 5px; margin-top: 2px;}
+.login_remember .go_for{ display: block; float: right; font-size:12px; color: #999; float: right;}
+.login_remember .go_for:hover{ color:#20a0ff;}
+
+.login_bnt{ width: 380px; height:46px; border: 1px solid #0484e3; background: #20a0ff; color: #fff; font-size: 16px; text-align: center; line-height: 46px; border-radius: 3px; margin: 20px 0;}
+.login_bnt:hover{background: #0484e3;}
+.go_reg{display: block; text-align: center; font-size: 13px; color:#20a0ff; line-height: 24px; }
+
+
+
+
+/*底部信息*/
+.login_footer{width:100%; height: 30px; text-align: center;line-height: 30px; font-size: 12px; color: #999;}
+
+
+
+
+
+
+

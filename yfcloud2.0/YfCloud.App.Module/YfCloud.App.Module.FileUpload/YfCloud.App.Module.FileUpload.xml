@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YfCloud.App.Module.FileUpload</name>
+    </assembly>
+    <members>
+        <member name="T:YfCloud.App.Module.FileUpload.Controllers.FilesController">
+            <summary>
+            文件上传
+            </summary>
+        </member>
+        <member name="M:YfCloud.App.Module.FileUpload.Controllers.FilesController.#ctor(Microsoft.Extensions.Options.IOptions{YfCloud.Models.AppConfig})">
+            <summary>
+            文件上传
+            </summary>
+            <param name="option"></param>
+        </member>
+        <member name="M:YfCloud.App.Module.FileUpload.Controllers.FilesController.Post(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="file">需要上传的文件,只能上传单个文件</param>
+            <returns></returns>
+        </member>
+        <member name="M:YfCloud.App.Module.FileUpload.Controllers.FilesController.Delete(System.String)">
+            <summary>
+            删除不需要上传的文件
+            </summary>
+            <param name="strFileName">需要删除的文件名称,需要带后缀</param>
+            <returns></returns>
+        </member>
+        <member name="T:YfCloud.App.Module.FileUpload.Controllers.HealthController">
+            <summary>
+            健康检查
+            </summary>
+        </member>
+        <member name="M:YfCloud.App.Module.FileUpload.Controllers.HealthController.Get">
+            <summary>
+            健康检查
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YfCloud.App.Module.FileUpload.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>

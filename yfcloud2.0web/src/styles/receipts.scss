@@ -1,0 +1,86 @@
+.findBox /deep/{
+    .cell {
+      padding: 0px 10px !important;
+    }
+    .el-pagination {
+      padding: 12px 5px;
+    }
+  } 
+  
+  .btnHeader /deep/{
+    .btnHeaderBox{
+      background: #F6F6F6;
+      font-size:0px;
+      height: 30px;
+    }
+    
+    .el-button{
+      background: #F6F6F6;
+      border: 0px solid #DCDFE6;
+      border-radius: 0px;
+      margin-left:0px;
+      height: 30px;
+    }
+    button:after{
+      border-right: 1px solid #DCDFE6;
+      content: "";
+      position: relative;
+      left:15px;
+    }
+    .dropdown button{
+      border: 0px solid #DCDFE6;
+      border-radius: 0px;
+    }
+    .el-dropdown {
+        vertical-align: top !important;
+        button{
+            height:30px !important;
+            left:0px !important;;
+        }
+        .el-button:focus{
+            z-index: 0;
+        }
+        button:after{
+            border-right: 0px solid #DCDFE6;
+            content: "";
+            position: relative;
+            left:15px;
+          }
+    }
+    .el-button-group>.el-button:hover, .el-button-group>.el-button:focus, .el-button-group>.el-button:active {
+        z-index: 0;
+    }
+  }
+.el-main {
+    padding-top: 0px !important;
+}
+.header {
+    padding-top: 15px !important;
+}
+.formItem {
+  margin-bottom: 15px !important;
+}
+.el-form-item--small.el-form-item {
+  margin-bottom: 15px !important;
+}
+.falseIp {
+  width: 200px !important;
+}
+.fromCenter {
+  display: flex;
+  justify-content: flex-start !important;
+}
+.middleWidth{
+  width:auto !important;
+}
+h1{
+  margin-bottom:0px;
+  font-size:24px;
+  text-align: center;
+}
+.falseIp {
+  border-bottom: 1px solid #dcdfe6 !important;
+}
+.headerIp{
+  // width:auto !important;
+}
